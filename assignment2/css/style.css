@@ -8,15 +8,15 @@ h1{
 
 .foodItem {
 	background-color: #999999;
-	width:30%;
+	width:100%;
 	position: relative;
-	border:2px solid black;
-	margin-right: 1.66%;
-	margin-left: 1.66%;
+	border:1px solid black;
+	margin-right: auto;
+	margin-left: auto;
 	float: left;
-	
+	margin-top: 20px;
 }
-.foodItem > div {
+#chicken, #beef, #sushi {
 	height:25px;
 	width: 33.3%;
 	padding:  0px ;
@@ -24,7 +24,8 @@ h1{
 	position: absolute;
 	top: 0;
 	right: 0;
-	border:2px solid black;
+	border:1px solid black;
+	border-top: 0px;
 }
 
 #chicken {
@@ -49,3 +50,29 @@ p{
 }
 
 /*=====================large devices========================== */
+@media (min-width: 992px){
+	.col-lg-4{
+		float: left;
+		width:30%;
+		margin-right: 1.66%;
+		margin-left: 1.66%
+		
+	}
+}
+
+/*=====================medium devices========================== */
+@media (min-width: 767px) and (max-width: 991px){
+	.col-md-6{
+		float:left;
+		width:45%;
+		margin-right: 2.5%;
+		margin-left: 2.5%;
+	}
+	.col-md-12{
+		float: left;
+		width:95%;
+		margin-right: 2.5%;
+		margin-left: 2.5%;
+
+	}
+}
